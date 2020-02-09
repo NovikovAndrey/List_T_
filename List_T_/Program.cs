@@ -20,6 +20,16 @@ namespace List_T_
                 Console.WriteLine(x);
             }
             separateEvent.Display();
+
+            List<Person> peoples = new List<Person>();
+            peoples.Add(new Person() { Name = "Tom" });
+            peoples.Add(new Person() { Name = "Bill" });
+            foreach(Person person in peoples)
+            {
+                Console.WriteLine(person);
+            }
+            separateEvent.Display();
+            Console.ReadKey();
         }
     }
 }
